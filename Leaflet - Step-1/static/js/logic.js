@@ -1,3 +1,4 @@
+
 var graymap = L.tileLayer(
   "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
   {
@@ -16,7 +17,7 @@ var map = L.map("map", {
   center: [
     41, -95.5
   ],
-  zoom: 2.9
+  zoom: 3.2
 });
 
 // add 'graymap' tile layer to the map.
@@ -62,9 +63,9 @@ graymap.addTo(map);
 
   function getRadius(magnitude) {
     if (magnitude === 0) {
-      return 1;
+      return 3;
     }
-    return magnitude * 4;
+    return magnitude * 3;
   }
 
 
